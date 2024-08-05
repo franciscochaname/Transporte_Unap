@@ -1,0 +1,204 @@
+/* Estilos generales del documento */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    color: #343a40;
+}
+
+/* Estilos específicos del header */
+header {
+    background: linear-gradient(to right, white, #f8f9fa); /* Degradado de blanco a gris claro */
+    color: #006400; /* Texto verde oscuro */
+    padding: 10px 20px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #006400; /* Línea inferior verde oscuro */
+    position: fixed; /* Mantiene el header fijo */
+    width: 100%;
+    z-index: 1001; /* Asegura que esté por encima del sidebar */
+    opacity: .5;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header img {
+    width: 100px; /* Ajustar el tamaño del logo */
+}
+
+.sidebar-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #006400; /* Color del botón de 3 líneas */
+}
+
+/* Estilos específicos del sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Inicialmente oculto y ajustado a 300px */
+    height: 100%;
+    width: 300px; /* Ajuste del ancho del sidebar */
+    background-color: white; /* Fondo blanco */
+    overflow-x: hidden;
+    transition: left 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    z-index: 1000; /* Asegura que esté por debajo del header */
+    padding-top: 70px; /* Espacio para el header */
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar-nav {
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav ul {
+    padding: 0;
+}
+
+.sidebar-nav li {
+    text-align: left;
+}
+
+.sidebar-nav a {
+    display: block;
+    color: #006400; /* Color verde oscuro */
+    padding: 12px 20px;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+    border-radius: 4px;
+    margin: 5px 10px;
+    font-size: 16px; /* Tamaño de fuente adecuado */
+}
+
+.sidebar-nav a:hover {
+    background-color: #d5e8d4; /* Fondo verde claro al pasar el mouse */
+    color: #006400; /* Texto verde oscuro al pasar el mouse */
+}
+
+.sidebar-nav a.active {
+    background-color: #b9e0b2; /* Fondo verde más oscuro cuando está activo */
+    color: #006400; /* Texto verde oscuro cuando está activo */
+}
+
+/* Estilos para el botón de cerrar sesión */
+.logout-button {
+    color: #ffffff;
+    background-color: #e74c3c; /* Color de fondo rojo */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background-color: #c0392b; /* Color de fondo al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logout-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.5);
+}
+
+/* Estilos para el modal de confirmación */
+.modal-confirm {
+    color: #636363;
+    width: 400px;
+}
+.modal-confirm .modal-content {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+}
+.modal-confirm .modal-header {
+    border-bottom: none;
+    position: relative;
+}
+.modal-confirm h4 {
+    text-align: center;
+    font-size: 26px;
+    margin: 30px 0 -10px;
+}
+.modal-confirm .close {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+.modal-confirm .modal-body {
+    text-align: center;
+    font-size: 14px;
+    padding: 40px 20px;
+}
+.modal-confirm .modal-footer {
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 10px 15px 25px;
+}
+.modal-confirm .modal-footer a {
+    color: #999;
+}
+.modal-confirm .icon-box {
+    color: #fff;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -70px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    z-index: 9;
+    background: #e74c3c;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.modal-confirm .icon-box i {
+    font-size: 58px;
+    position: relative;
+    top: 3px;
+}
+.modal-confirm.modal-dialog {
+    margin-top: 80px;
+}
+.modal-confirm .btn {
+    color: #fff;
+    border-radius: 4px;
+    background: #eeb711;
+    text-decoration: none;
+    transition: all 0.4s;
+    line-height: normal;
+    border: none;
+}
+.modal-confirm .btn-info {
+    background: #c1c1c1;
+}
+.modal-confirm .btn-info:hover, .modal-confirm .btn-info:focus {
+    background: #a8a8a8;
+}
+.modal-confirm .btn-danger {
+    background: #e74c3c;
+}
+.modal-confirm .btn-danger:hover, .modal-confirm .btn-danger:focus {
+    background: #d62c1a;
+}

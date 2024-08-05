@@ -1,0 +1,9 @@
+/* Estilos específicos del contenedor de la página principal */
+.main-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 12px;
+}

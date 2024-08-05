@@ -1,0 +1,202 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card .card-text {
+    font-size: 2rem;
+}
+
+.chart-container {
+    margin-top: 40px;
+}
+
+.chart-container canvas {
+    max-width: 100%;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.dashboard-container .card {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+.chart-container {
+    background-color: white; /* Fondo blanco para los gráficos */
+    padding: 20px; /* Espacio alrededor de los gráficos */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
+    margin-bottom: 20px; /* Espacio entre los gráficos */
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.main-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.table-container {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #d1d1d1;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #357ab7;
+}
+
+.search-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-container input {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+}
+
+.table-container {
+    margin-top: 20px;
+    width: 100%;
+}
+
+#datosMantenimiento {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+#datosMantenimiento th, #datosMantenimiento td {
+    border: 1px solid #d1d1d1;
+    padding: 8px;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+#datosMantenimiento th {
+    background-color: #333;
+    color: #fff;
+}
+
+#datosMantenimiento tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#datosMantenimiento tr:hover {
+    background-color: #f1f1f1;
+}
+
+.repuestos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.repuesto-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #d1d1d1;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f5f7fa;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid #d1d1d1;
+}
+
+.table th {
+    background-color: #333;
+    color: white;
+    text-align: left;
+}
+    

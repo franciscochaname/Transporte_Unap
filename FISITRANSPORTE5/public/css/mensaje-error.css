@@ -1,0 +1,9 @@
+/* Estilos específicos del mensaje de error */
+.message {
+    background-color: #ffcccc;
+    color: #cc0000;
+    padding: 10px;
+    border: 1px solid #cc0000;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}

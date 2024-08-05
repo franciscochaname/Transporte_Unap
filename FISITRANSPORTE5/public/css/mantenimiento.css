@@ -1,0 +1,177 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #343a40;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.main-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.checkbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Espacio entre los checkboxes */
+    margin-bottom: 20px;
+}
+
+.checkbox-item {
+    flex: 1 1 calc(33.333% - 10px); /* Tres columnas */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #76eb79;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.checkbox-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.date-container {
+    display: flex;
+    gap: 20px; /* Espacio entre los campos de fecha */
+    align-items: center; /* Alinear verticalmente al centro */
+    margin-bottom: 20px;
+}
+
+input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="date"]:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.temp-table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.temp-table th, .temp-table td {
+    padding: 12px;
+    text-align: left;
+}
+
+.temp-table th {
+    background-color: #4CAF50;
+    color: #fff;
+    font-weight: 500;
+}
+
+.temp-table td {
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.temp-table tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+.temp-table tr:hover td {
+    background-color: #f1f1f1;
+}
+
+.estado {
+    background-color: #eaa609; /* Color mostaza */
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.gran-cantidad {
+    background-color: #4CAF50; /* Verde para gran cantidad */
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Additional Styles for better visual appearance */
+.table-container {
+    margin-top: 20px;
+}
+
+.checkbox-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Estilo para la caja de texto del comentario */
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 3px solid #4CAF50;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+    resize: vertical;
+}
+
+/* Efecto para diferentes cantidades */
+.checkbox-item[data-quantity="0"] {
+    background-color: red;
+    color: white;
+}
+
+.checkbox-item[data-quantity="1"], .checkbox-item[data-quantity="2"] {
+    background-color: #fbb830; /* Color mostaza */
+    color: black;
+}
+
+.checkbox-item[data-quantity="3"], .checkbox-item[data-quantity="4"], .checkbox-item[data-quantity="5"], .checkbox-item[data-quantity="6"], .checkbox-item[data-quantity="7"], .checkbox-item[data-quantity="8"], .checkbox-item[data-quantity="9"], .checkbox-item[data-quantity="10"] {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+}
+
+.checkbox-item[data-quantity="76"] {
+    background-color: #f1f1f1;
+    color: black;
+}

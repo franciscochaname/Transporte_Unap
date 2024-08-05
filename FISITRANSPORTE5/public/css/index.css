@@ -1,0 +1,170 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.background-image {
+    background: url('https://concepto.de/wp-content/uploads/2020/12/imagen-e1607991781485.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 20, 0.6); /* Filtro azul oscuro */
+    z-index: 1;
+}
+.content-wrapper {
+    display: flex;
+    z-index: 2;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 50%;
+}
+.welcome-message {
+    margin-right: 20px;
+}
+.welcome-message h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.welcome-message p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+    width: 400px;
+}
+.welcome-message button {
+    width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #0078D4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.welcome-message button:hover {
+    background-color: #005a9e;
+}
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin-left: 20px;
+}
+.container h1 {
+    color: black;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.container label {
+    color: black;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.container button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #0078D4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container button:hover {
+    background-color: #005a9e;
+}
+.container a {
+    color: #0078D4;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+.container a:hover {
+    text-decoration: underline;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+.modal-content h2 {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 20px;
+}
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.modal-content button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #0078D4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.modal-content button:hover {
+    background-color: #005a9e;
+}
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

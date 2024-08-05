@@ -1,0 +1,55 @@
+/* Estilos específicos del grupo de inputs */
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #6c757d;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.input-group input::placeholder, .input-group textarea::placeholder {
+    color: #6c757d;
+}
+
+.input-group input[type="text"] {
+    background-image: url('icono_nombre.png'); /* Reemplaza con la URL de tu icono */
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+.input-group input[type="email"] {
+    background-image: url('icono_email.png'); /* Reemplaza con la URL de tu icono */
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+.input-group input[type="tel"] {
+    background-image: url('icono_telefono.png'); /* Reemplaza con la URL de tu icono */
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+.input-group input.asunto {
+    background-image: url('icono_asunto.png'); /* Reemplaza con la URL de tu icono */
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+.input-group textarea {
+    height: 100px;
+    resize: vertical;
+    background-image: url('icono_comentario.png'); /* Reemplaza con la URL de tu icono */
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+}
